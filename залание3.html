@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+	var arr = []
+	min=-10
+	max=30
+
+	for(i=0; i<=15; i++) {
+		arr[i] = Math.round(Math.random()*(max-min) + min)
+	}
+	alert(arr)
+	sumPos=0
+	a=0
+	for(i=0; i<=15; i++) {
+	if (arr[i]>0){
+		sumPos=sumPos+arr[i]
+   	 	a++
+  	}}
+  	alert("Средне ариф положительных"+sumPos/a)
+  	
+  	b=0
+  	sumMin=0
+	
+	for(i=0; i<=15; i++) {
+	if (arr[i]<0){
+		sumMin=sumMin+arr[i]
+   	 	b++
+  	}}
+	alert("Средне ариф отрицательных"+sumMin/a)
+	nullSum=0
+	for(i=0; i<=15; i++) {
+	if (arr[i]==0){
+		nullSum++
+  	}}
+	alert("Количество нулей"+nullSum)
+
+</script>

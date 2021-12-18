@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+	var arr = []
+	min=-10
+	max=30
+	
+	for(i=0; i<=15; i++) {
+		arr[i] = Math.round(Math.random()*(max-min) + min)
+	}
+	alert(arr)
+	for(i=0; i<=15; i++) {
+	if (arr[i]<0){
+		arr[i]=arr[i]*arr[i]
+  	}}
+	alert(arr)
+</script>
